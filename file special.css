@@ -1,0 +1,203 @@
+.location-listing{position: relative;}
+.location-title{
+    font-size: 1.5em;
+    font-weight: bold;
+
+    z-index: 1;
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: rgba(0, 20, 90, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.location-listing:hover .location-title{opacity: 1;}
+.location-listing:hover .location-image img{
+    filter: blur(2px);
+}
+@keyframes i2 {
+    0% { color: #0af865; }
+    50% { color: #f50505; }
+    100% { color: #f8ec0a; }
+    }
+@keyframes my {
+    0% { color: #0af865; }
+    50% { color: #f50505; }
+    100% { color: #f8ec0a; }
+    }
+
+@keyframes ny {
+        0% { color: #ffffff; }
+        13% { color:#a8dadd; }
+        25% { color:#2b85c9; }
+        38% { color:#3765ce; }
+        50% { color:#094be6; }
+        63% { color:#3765ce; }
+        75% { color:#2b85c9; }
+        88% { color:#a8dadd; }
+        100% { color:#ffffff }
+        }
+@keyframes oy {
+        0% { color: #f1d4fc; }
+        13% { color:#cea2f0; }
+        25% { color:#ee80d8; }
+        38% { color:#d6479f; }
+        50% { color:#c32e53; }
+        63% { color:#d6479f; }
+        75% { color:#ee80d8; }
+        88% { color:#cea2f0; }
+        100% { color:#f1d4fc; }
+}
+.name{
+        background:rgb(89, 136, 144);
+        font-size:5px;
+        font-weight:bold;
+        -webkit-animation: oy 7000ms infinite;
+        -moz-animation: oy 7000ms infinite;
+        -o-animation: oy 7000ms infinite;
+        animation: oy 7000ms infinite;
+        }
+.quangcao{ 
+    background:#000000; 
+    font-size:24px; 
+    font-weight:bold; 
+    -webkit-animation: my 3000ms infinite; 
+    -moz-animation: my 3000ms infinite; 
+    -o-animation: my 3000ms infinite; 
+    animation: my 3000ms infinite; 
+    }
+.tuyetroi{
+    position: absolute;left: 0px;top: 0px;
+    padding-left:15px;
+    font-size:18px;
+    line-height:24px;
+    position:fixed;
+    color:#ebebeb;
+    user-select:none;
+    z-index:1000;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+
+    -webkit-animation: ny 5000ms infinite;
+        -moz-animation: ny 5000ms infinite;
+        -o-animation: ny 5000ms infinite;
+        animation: ny 5000ms infinite;
+    }
+.tuyetroi:hover{cursor:default;}
+.header{
+    background-color: rgb(61, 94, 143);
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid rgb(2, 147, 166)
+    
+}
+.theloai{
+    width: 40%;
+    background-color: rgb(16, 32, 45);
+    border-radius: 10px;
+}
+body{
+    background-color: rgb(16, 32, 45);
+}
+
+.root>li{
+    list-style: none;
+    float: left;
+    position: relative;
+    display: block;
+
+}
+.root li a{
+    text-decoration: none;
+    color: rgb(204, 198, 81);
+    padding: 0px 15px 0px 15px;
+    line-height: 50px;
+    display: block;
+}
+.menu_web{
+    padding: left;
+    font-weight: bold;
+    background-color: rgb(32, 88, 131);
+    width: 50%;
+    height: 50px;
+    display: block;
+    margin: 0px ;
+    border: 1px ;
+    border-radius: 10px;
+}
+.search
+{
+    width: 300px;
+    height: 45px;
+    padding: left;
+    background-color: rgb(32, 88, 131);
+    display: block;
+    margin: 3px ;
+    border-radius: 20px;
+}
+.root li a:hover{
+    background-color: rgb(43, 93, 81);
+    color: rgb(123, 157, 39);
+}
+.submenu{
+    width: 180px;
+    background-color: cornflowerblue;
+    color: palevioletred;
+    min-height: 80px;
+    display: none;
+    
+}
+.submenu li a{
+    text-transform: none;
+    text-decoration: none;
+    color: rgb(69, 189, 161);
+    display: block;
+    border: 1px rgb(37, 43, 45);
+    line-height: 50px;
+    text-align: 20px;
+}
+.root li:hover .submenu{display: block;
+    background-color: rgb(37, 43, 45);
+    color: rgb(83, 119, 64);
+    transition: ease-in-out 0.30s;
+    position: absolute;
+}
+.submenu li a:hover{
+    background-color: cornflowerblue;
+    color: orange;
+    transform: ease-in-out 0.30s ;
+}
+
+.doan2 table{
+    width: 80%;
+    background-color: rgb(13, 59, 94);
+    border-radius: 10px;
+}
+.doan3 table tr td
+{
+    border: 1px ;
+}
+.doan3 table{
+    width: 100%;
+}
+.tenphim:hover
+{
+    color: #8dcbb2;
+    background-color: rgb(57, 79, 87);
+    color: rgb(15, 90, 52);
+    transition: ease-in-out 0.30s;
+}
+.maucenter{
+    background-color: #001431;
+    border-radius: 30px;
+}
+
